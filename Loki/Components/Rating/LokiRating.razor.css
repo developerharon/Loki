@@ -1,0 +1,37 @@
+﻿.rating {
+    /* Center the content */
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: row-reverse;
+    font-size: 32px;
+}
+
+.rating_star:hover, .rating_star:hover ~ .rating_star {
+    color: transparent;
+    cursor: pointer;
+}
+
+/* 
+    Make all previous stars selected when hover on a star
+    Note that we use `flex-direction: row-reverse` on the container
+*/
+
+.rating_star:hover:before, .rating_star:hover ~ .rating_star:before {
+    color: #00449e;
+    content: '\2605';
+    left: 0;
+    position: absolute;
+}
+
+.rating_star {
+    /* Reset styles for button */
+    background-color: transparent;
+    border: transparent;
+    margin: 0 2px;
+    padding: 0;
+
+    /* Used to position the hover state */
+    position: relative;
+}
+
