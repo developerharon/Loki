@@ -5,19 +5,15 @@ using System.Threading.Tasks;
 
 namespace Loki.Components
 {
-    public partial class LokiButton : LokiComponentBase
+    public partial class LokiAvatar : LokiComponentBase
     {
         [Parameter] public string Class { get; set; }
         [Parameter] public string Style { get; set; }
-        [Parameter] public bool Disabled { get; set; }
-        [Parameter] public EventCallback<MouseEventArgs> OnClick { get; set; }
         [Parameter] public RenderFragment ChildContent { get; set; }
+        [Parameter] public EventCallback<MouseEventArgs> OnClick { get; set; }
 
         private async Task OnClickHandler(MouseEventArgs e)
         {
-            if (Disabled)
-                return;
-
             await OnClick.InvokeAsync(e);
         }
     }
