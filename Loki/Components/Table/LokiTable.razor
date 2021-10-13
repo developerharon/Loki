@@ -1,0 +1,31 @@
+﻿@namespace Loki.Components
+@inherits LokiComponentBase
+@typeparam T
+
+<div>
+    <table>
+        @if (HeaderTemplate is not null)
+        {
+            <thead>
+                @HeaderTemplate
+            </thead>
+        }
+
+        @if (RowTemplate is not null)
+        {
+            <tbody>
+                @foreach (var dataItem in Data ?? new List<T>())
+                {
+                    @RowTemplate(dataItem)
+                }
+            </tbody>
+        }
+
+        @if (FooterTemplate is not null)
+        {
+            <tfoot>
+                @FooterTemplate
+            </tfoot>
+        }
+    </table>
+</div>
