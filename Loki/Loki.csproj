@@ -2,6 +2,13 @@
 
   <PropertyGroup>
     <TargetFramework>net5.0</TargetFramework>
+    <Description>Blazor Component Library</Description>
+    <PackageProjectUrl>https://github.com/developerharon/Loki</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/developerharon/Loki</RepositoryUrl>
+    <PackageTags>blazor;component;library</PackageTags>
+    <PackageReleaseNotes>It has LokiTable the first component that can be used, kinda</PackageReleaseNotes>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+    <PackageId>$(AssemblyName).Blazor</PackageId>
   </PropertyGroup>
 
   
@@ -11,6 +18,13 @@
 
   <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.Components.Web" Version="5.0.7" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="..\README.md">
+      <Pack>True</Pack>
+      <PackagePath></PackagePath>
+    </None>
   </ItemGroup>
 
   <ItemGroup>
