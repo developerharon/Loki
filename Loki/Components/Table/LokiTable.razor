@@ -7,7 +7,9 @@
         @if (HeaderTemplate is not null)
         {
             <thead>
-                @HeaderTemplate
+                <tr>
+                    @HeaderTemplate
+                </tr>
             </thead>
         }
 
@@ -16,7 +18,9 @@
             <tbody>
                 @foreach (var dataItem in Data ?? new List<T>())
                 {
-                    @RowTemplate(dataItem)
+                    <tr>
+                        @RowTemplate(dataItem)
+                    </tr>
                 }
             </tbody>
         }
@@ -24,7 +28,9 @@
         @if (FooterTemplate is not null)
         {
             <tfoot>
-                @FooterTemplate
+                <tr>
+                    @FooterTemplate
+                </tr>
             </tfoot>
         }
     </table>

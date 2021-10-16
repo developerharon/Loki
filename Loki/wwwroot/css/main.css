@@ -1,0 +1,15 @@
+﻿:root {
+    --primary: #4550e6;
+    --secondary: #ff6a00;
+    --success: #00ff21;
+    --error: #ff0000;
+    --warning: #ff6a00;
+}
+
+.btn-primary {
+    background-color: var(--primary);
+    border: 1px solid var(--primary);
+    color: white;
+    font-size: 18px;
+    padding: 13px;
+}
