@@ -1,0 +1,67 @@
+﻿:root {
+  
+}
+
+.loki-button {
+    --primary: #4550e6;
+    --secondary: #ff6a00;
+    --success: #00ff21;
+    --error: #ff0000;
+    --warning: #ff6a00;
+    --dark: #555555;
+
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+
+.loki-button-filled {
+    padding: 15px 32px;
+    border: none;
+}
+
+.loki-button-filled-default {
+    background-color: #e7e7e7;
+    color: black;
+}
+
+.loki-button-filled-primary {
+    background-color: var(--primary);
+    color: white;
+}
+
+.loki-button-filled-secondary {
+    background-color: var(--secondary);
+    color: white;
+}
+
+.loki-button-filled-success {
+    background-color: var(--success);
+    color: white;
+}
+
+.loki-button-filled-dark {
+    background-color: var(--dark);
+    color: white;
+}
+
+.loki-button-outlined {
+    padding: 13px 30px;
+    border: 2px solid #4caf50;
+}
+
+.loki-button-outlined-hoverable {
+    transition-duration: 0.4s;
+}
+
+.loki-button-outlined-hoverable:hover {
+    color: white;
+    background-color: #4caf50;
+}
+
+
+.loki-button-disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
