@@ -12,10 +12,10 @@ namespace Loki.Components
             .AddClass("loki-button")
             .AddClass($"loki-button-{Variant.ToString()}")
             .AddClass($"loki-button-{Variant.ToString()}-{Color.ToString()}")
+            .AddClass($"loki-button-{Variant.ToString()}-{Color.ToString()}-hoverable", Hoverable)
+            .AddClass("loki-button-disabled", Disabled)
             .AddClass(Class)
             .Build();
-
-        private string _cssStyles = "";
 
         [Parameter] public RenderFragment ChildContent { get; set; }
         [Parameter] public EventCallback OnClick { get; set; }
@@ -24,7 +24,7 @@ namespace Loki.Components
 
         [Parameter] public Variant Variant { get; set; } = Variant.Filled;
         [Parameter] public Color Color { get; set; } = Color.Default;
-        [Parameter] public bool Hoverable { get; set; } = true;
+        [Parameter] public bool Hoverable { get; set; } = false;
         [Parameter] public bool Disabled { get; set; } = false;
 
         private async Task HandleOnClick()

@@ -1,11 +1,7 @@
-﻿:root {
-  
-}
-
-.loki-button {
+﻿.loki-button {
     --primary: #4550e6;
     --secondary: #ff6a00;
-    --success: #00ff21;
+    --success: #4caf50;
     --error: #ff0000;
     --warning: #ff6a00;
     --dark: #555555;
@@ -14,54 +10,163 @@
     text-decoration: none;
     display: inline-block;
     font-size: 16px;
-}
-
-.loki-button-filled {
+    cursor: pointer;
     padding: 15px 32px;
-    border: none;
+    border-width: 2px;
+    border-style: solid;
 }
-
-.loki-button-filled-default {
-    background-color: #e7e7e7;
-    color: black;
-}
-
-.loki-button-filled-primary {
-    background-color: var(--primary);
-    color: white;
-}
-
-.loki-button-filled-secondary {
-    background-color: var(--secondary);
-    color: white;
-}
-
-.loki-button-filled-success {
-    background-color: var(--success);
-    color: white;
-}
-
-.loki-button-filled-dark {
-    background-color: var(--dark);
-    color: white;
-}
-
-.loki-button-outlined {
-    padding: 13px 30px;
-    border: 2px solid #4caf50;
-}
-
-.loki-button-outlined-hoverable {
-    transition-duration: 0.4s;
-}
-
-.loki-button-outlined-hoverable:hover {
-    color: white;
-    background-color: #4caf50;
-}
-
 
 .loki-button-disabled {
     opacity: 0.6;
     cursor: not-allowed;
+}
+
+.loki-button-filled {
+
+}
+
+.loki-button-filled-default {
+    color: black;
+    background-color: #e7e7e7;
+    border-color: #e7e7e7;
+}
+
+.loki-button-filled-default-hoverable {
+    transition-duration: 0.4s;
+}
+
+.loki-button-filled-default-hoverable:hover {
+    color: black;
+    background-color: white;
+}
+
+
+.loki-button-filled-primary {
+    color: white;
+    background-color: var(--primary);
+    border-color: var(--primary)
+}
+.loki-button-filled-primary-hoverable {
+    transition-duration: 0.4s;
+}
+
+.loki-button-filled-primary-hoverable:hover {
+    color: black;
+    background-color: white;
+}
+
+
+.loki-button-filled-secondary {
+    color: white;
+    background-color: var(--secondary);
+    border-color: var(--secondary);
+}
+
+.loki-button-filled-secondary-hoverable {
+    transition-duration: 0.4s;
+}
+
+.loki-button-filled-secondary-hoverable:hover {
+    color: black;
+    background-color: white;
+}
+
+.loki-button-filled-success {
+    color: white;
+    background-color: var(--success);
+    border-color: var(--success);
+}
+
+.loki-button-filled-success-hoverable {
+    transition-duration: 0.4s;
+}
+
+.loki-button-filled-success-hoverable:hover {
+    color: black;
+    background-color: white;
+}
+
+.loki-button-filled-dark {
+    color: white;
+    background-color: var(--dark);
+    border-color: var(--dark);
+}
+
+.loki-button-filled-dark-hoverable {
+    transition-duration: 0.4s;
+}
+
+.loki-button-filled-dark-hoverable:hover {
+    color: black;
+    background-color: white;
+}
+
+.loki-button-outlined {
+    background-color: white;
+    color: black;
+}
+
+.loki-button-outlined-default {
+    border-color: #e7e7e7;
+}
+
+.loki-button-outlined-default-hoverable {
+    transition-duration: 0.4s;
+}
+
+.loki-button-outlined-default-hoverable:hover {
+    color: black;
+    background-color: #e7e7e7;
+}
+
+.loki-button-outlined-primary {
+    border-color: var(--primary)
+}
+
+.loki-button-outlined-primary-hoverable {
+    transition-duration: 0.4s;
+}
+
+.loki-button-outlined-primary-hoverable:hover {
+    color: white;
+    background-color: var(--primary);
+}
+
+.loki-button-outlined-secondary {
+    border-color: var(--secondary);
+}
+
+.loki-button-outlined-secondary-hoverable {
+    transition-duration: 0.4s;
+}
+
+.loki-button-outlined-secondary-hoverable:hover {
+    color: white;
+    background-color: var(--secondary);
+}
+
+.loki-button-outlined-success {
+    border-color: var(--success);
+}
+
+.loki-button-outlined-success-hoverable {
+    transition-duration: 0.4s;
+}
+
+.loki-button-outlined-success-hoverable:hover {
+    color: white;
+    background-color: var(--success);
+}
+
+.loki-button-outlined-dark {
+    border-color: var(--dark);
+}
+
+.loki-button-outlined-dark-hoverable {
+    transition-duration: 0.4s;
+}
+
+.loki-button-outlined-dark-hoverable:hover {
+    color: white;
+    background-color: var(--dark);
 }

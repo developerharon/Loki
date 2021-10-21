@@ -11,26 +11,22 @@ namespace Loki.Utilities
             _classNames = new StringBuilder();
         }
 
-        public CssClassBuilder AddClass(string className) => AppendClass(className);
-
-        public CssClassBuilder AddClass(string className, bool when) => AppendClass(className, when);
-
-        public string Build()
-        {
-            return _classNames.ToString().Trim().ToLower();
-        }
-
-        private CssClassBuilder AppendClass(string className)
+        public CssClassBuilder AddClass(string className)
         {
             _classNames.Append($" {className}");
             return this;
         }
 
-        private CssClassBuilder AppendClass(string className, bool when)
+        public CssClassBuilder AddClass(string className, bool when)
         {
             if (when is true)
                 _classNames.Append($" {className}");
             return this;
+        }
+
+        public string Build()
+        {
+            return _classNames.ToString().Trim().ToLower();
         }
     }
 }
