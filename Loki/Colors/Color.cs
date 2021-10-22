@@ -2,6 +2,6 @@
 {
     public enum Color
     {
-        Default, Primary, Secondary, Success, Dark, Error
+        Default, Primary, Secondary, Success, Dark, Warning, Error, Info, Inherit
     }
 }
