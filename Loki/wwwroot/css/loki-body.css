@@ -1,0 +1,8 @@
+﻿.loki-body {
+    overflow-y: scroll;
+    position: relative;
+    height: inherit;
+    min-height: inherit;
+
+    grid-column: 2;
+}

@@ -6,3 +6,13 @@
     --warning: #ff6a00;
     --dark: #555555;
 }
+
+body,
+html {
+    margin: 0;
+    overflow: hidden;
+}
+
+* {
+    box-sizing: border-box;
+}

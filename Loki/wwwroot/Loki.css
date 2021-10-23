@@ -1,2 +1,7 @@
 ﻿@import 'css/loki-root.css';
+@import 'css/loki-layout.css';
+@import 'css/loki-header.css';
+@import 'css/loki-content.css';
+@import 'css/loki-drawer.css';
+@import 'css/loki-body.css';
 @import 'css/loki-button.css';

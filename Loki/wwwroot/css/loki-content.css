@@ -1,0 +1,7 @@
+﻿.loki-content {
+    grid-row: 2;
+    display: grid;
+    grid-template-columns: 2fr 10fr;
+    min-height: 100%;
+    position: relative;
+}

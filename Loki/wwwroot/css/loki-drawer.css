@@ -1,0 +1,8 @@
+﻿.loki-drawer {
+    overflow-y: scroll;
+    position: relative;
+    height: inherit;
+    min-height: inherit;
+    background-color: aquamarine;
+    grid-column: 1;
+}

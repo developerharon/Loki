@@ -1,0 +1,7 @@
+﻿.loki-layout {
+    display: grid;
+    grid-template-rows: 8% auto;
+    background-color: black;
+    height: 100%;
+    width: 100%;
+}
